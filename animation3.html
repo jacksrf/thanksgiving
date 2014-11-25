@@ -311,16 +311,22 @@ var draw = function() {
   var drawWarning = function() {
     ctx.fillRect(370,460, 2,5);
     ctx.fillRect(135,575, 2,5);
-    ctx.fillstyle = "yellow";
+    ctx.fillstyle = ctx.fillStyle === "yellow" ? "black" : "yellow";
   }
-
-  //   var color = "black";
-  //   if (color = "black") {
-  //     color = "yellow"
-  //   } else if (color = "yellow") {
-  //     color = "black";
+  
+  // var color = function() {
+  //   var colorSwitch = true;
+  //   if (colorSwitch = true) {
+  //     return "yellow";
+  //     colorSwitch = false;
+  //   } else if (colorSwitch = false) {
+  //     return "black";
+  //     colorSwitch = true;
   //   }
   // }
+
+
+
 
 // while (y=900; y > 449; y--) {   
 //           drawcircle();
